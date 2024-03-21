@@ -810,7 +810,7 @@ function revertFakeInfo(content, userID, hostName, isBase64) {
 // });
 	 // if (isBase64) lines = btoa(lines);//Base64编码
 
-	return lines;
+	return content;
 }
 
 function generateRandomNumber() {
