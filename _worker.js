@@ -810,7 +810,7 @@ function revertFakeInfo(content, userID, hostName, isBase64) {
  		 // return line; // 如果需要返回处理后的行，可以在这里进行处理
 		}
 });
-	 // if (isBase64) lines = btoa(lines);//Base64编码
+	 if (isBase64) newcontent = btoa(newcontent);//Base64编码
 
 	return newcontent;
 }
