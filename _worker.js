@@ -807,7 +807,7 @@ function revertFakeInfo(content, userID, hostName, isBase64) {
 });
 	 // if (isBase64) content = btoa(content);//Base64编码
 
-	return content;
+	return lines;
 }
 
 function generateRandomNumber() {
