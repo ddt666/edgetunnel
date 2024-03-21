@@ -802,7 +802,7 @@ function revertFakeInfo(content, userID, hostName, isBase64) {
 	if (isBase64) content = atob(content);//Base64解码
 	content = content.replace(new RegExp(fakeUserID, 'g'), userID).replace(new RegExp(fakeHostName, 'g'), hostName);
 	const lines = content.split('\n').map((line, index) => {
- 		 line = line+'_'+index
+ 		 line = line+'_'+index+'\n'
  		 return line; // 如果需要返回处理后的行，可以在这里进行处理
 });
 	 // if (isBase64) content = btoa(content);//Base64编码
